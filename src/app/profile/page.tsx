@@ -734,7 +734,7 @@ export default function ProfilePage() {
                         className="border mb-3 border-gray-300 text-gray-500 rounded-full flex flex-row shadow-md p-3"
                         key={index}
                       >
-                        <div className="w-[13%] mr-auto ">
+                        <div className="lg:w-[15%] md:w-[13%] sm:w-[18%]  mr-auto ">
                           <Image
                             width={55}
                             height={55}
@@ -756,7 +756,7 @@ export default function ProfilePage() {
                         className="border mb-3 border-gray-300 text-gray-500 rounded-full flex flex-row shadow-md p-3"
                         key={index}
                       >
-                        <div className="lg:w-[13%] sm:w-[22%] mr-auto ">
+                        <div className="lg:w-[15%] md:w-[13%] sm:w-[18%]  mr-auto ">
                           <Image
                             width={55}
                             height={55}

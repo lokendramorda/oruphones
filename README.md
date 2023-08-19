@@ -1,7 +1,10 @@
 ## Internship Assignment For ORU Phones
+
 I developed the comprehensive Internship Assignment from Oruphones by utilizing the capabilities of Next.js and Tailwind as a sophisticated front-end client, seamlessly integrated with a dynamic Node.js backend using Typescript. The assignment's data persistence is fortified by the MongoDB, ensuring efficient and secure storage of vital information.
 
+
 ## Data Management
+
 To safeguard user credentials, a encryption technique known as bcrypt is employed. User passwords are transformed into irreversible, hashed representations before being stored in the database.
 The user signup process is designed with validation mechanisms using yup. Each field of the signup form is subject to rigorous scrutiny, ensuring that only valid and properly formatted data is accepted.
 Innovatively, the architecture also addresses the storage of images within MongoDB. Images are encoded into the Base64 format before being stored as documents in the database. this method allows for easier synchronization between front-end and back-end systems.

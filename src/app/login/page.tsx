@@ -24,6 +24,7 @@ export default function LoginPage() {
       setLoading(false);
     } catch (error: any) {
       console.log("Login failed", error.message);
+      alert("Enter Valid Credentials");
       toast.error(error.message);
     } finally {
       setLoading(false);

@@ -29,6 +29,7 @@ export default function SignupPage() {
             
         } catch (error:any) {
             console.log("Signup failed", error.message);
+            alert("Enter Valid Credentials");
             
             toast.error(error.message);
         }finally {

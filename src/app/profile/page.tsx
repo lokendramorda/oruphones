@@ -412,7 +412,7 @@ export default function ProfilePage() {
                     <div className="flex flex-col w-full h-full ml-auto items-center justify-center editInputs absolute z-10">
                       <label className=" mr-auto mb-2">your name:</label>
                       <input
-                        className="w-1/2 mb-3 mr-auto px-4 py-2 rounded-md border focus:outline-none focus:ring focus:border-black focus:ring-green-200"
+                        className="text-black w-1/2 mb-3 mr-auto px-4 py-2 rounded-md border focus:outline-none focus:ring focus:border-black focus:ring-green-200"
                         onChange={(e) => {
                           setName(e.target.value);
                           onchange({

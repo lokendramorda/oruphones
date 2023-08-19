@@ -1,5 +1,5 @@
 {
-  "name": "oruphones",
+  "name": "auth-nextjs-youtube",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,15 +9,37 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.5.0",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.15",
-    "next": "13.4.16",
-    "postcss": "8.4.27",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.5",
+    "@types/node": "20.3.2",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "express-validator": "^7.0.1",
+    "ioredis": "^5.3.2",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.1",
+    "next": "13.4.7",
+    "next-connect": "^1.0.0",
+    "nodemailer": "^6.9.3",
+    "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.15.0",
+    "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/nodemailer": "^6.4.8"
   }
 }

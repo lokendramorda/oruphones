@@ -1,10 +1,9 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -15,7 +14,7 @@ const config: Config = {
       },
       screens: {
         'sm': '350px', 
-        'md': '768px',
+        'md': '500px',
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
@@ -24,4 +23,3 @@ const config: Config = {
   },
   plugins: [],
 }
-export default config

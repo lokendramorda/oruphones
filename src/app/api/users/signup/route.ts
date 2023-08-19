@@ -2,9 +2,17 @@ import {connect} from "@/dbConfig/dbConfig";
 import User from "@/models/userModel";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from "bcryptjs";
+import * as yup from 'yup';
+
+connect();
+
+const validationSchema = yup.object().shape({
+  username: yup.string().required('Username is required'),
+  email: yup.string().email('Invalid email').required('Email is required'),
+  password: yup.string().min(6, 'Password must be at least 6 characters').required('Password is required')
+});
 
 
-connect()
 
 
 export async function POST(request: NextRequest){
@@ -12,7 +20,7 @@ export async function POST(request: NextRequest){
         const reqBody = await request.json()
         const {username, email, password} = reqBody
 
-
+        await validationSchema.validate(reqBody, { abortEarly: false });
         
         const user = await User.findOne({email})
 
@@ -45,6 +53,10 @@ export async function POST(request: NextRequest){
 
 
     } catch (error: any) {
+        if (error instanceof yup.ValidationError) {
+            const errors = error.inner.map(err => ({ field: err.path, message: err.message }));
+            return NextResponse.json({ errors }, { status: 400 });
+          }
         return NextResponse.json({error: error.message}, {status: 500})
 
     }

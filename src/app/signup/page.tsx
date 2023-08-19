@@ -9,6 +9,7 @@ import { toast } from "react-hot-toast";
 
 
 export default function SignupPage() {
+    const [buttonDisabled, setButtonDisabled] = useState(true);
     const router = useRouter();
     const [user, setUser] = React.useState({
         email: "",
@@ -39,9 +40,11 @@ export default function SignupPage() {
 
     useEffect(() => {
         if(user.email.length > 0 && user.password.length > 0 && user.username.length > 0) {
-           
+            setButtonDisabled(false); 
         } else {
-           
+            setButtonDisabled(true);
+            
+            
         }
     }, [user]);
 
@@ -115,6 +118,7 @@ export default function SignupPage() {
             <div className="flex justify-between items-center">
             <button
             onClick={onSignup}
+            disabled={buttonDisabled || loading}
             className="mr-auto  bg-white text-black hover:text-white border border-black py-2 px-4 rounded-md hover:bg-gray-600"
             >
                 Signup

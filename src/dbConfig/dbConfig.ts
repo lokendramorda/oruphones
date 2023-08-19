@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 export async function connect() {
     try {
-        mongoose.connect('mongodb+srv://loki:1234loki@cluster0.maf972m.mongodb.net/Oru?retryWrites=true&w=majority'!);
+        mongoose.connect(process.env.MONGO_URI!);
         const connection = mongoose.connection;
 
         connection.on('connected', () => {

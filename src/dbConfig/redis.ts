@@ -1,6 +1,6 @@
 import {Redis} from "ioredis";
 
-const redisUrl = "rediss://default:87ff426697324825ae343ef6e1006b74@apn1-famous-prawn-33653.upstash.io:33653"
+const redisUrl = process.env.REDIS_URL
 
 const getRedisUrl =() =>{
     if (redisUrl){

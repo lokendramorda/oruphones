@@ -25,7 +25,7 @@ export default function Home() {
       setUserEmail(storeduserEmail || "");
     }
   }, []);
-  
+
   const router = useRouter();
 
   const[link, setLink] = useState('');
@@ -166,9 +166,9 @@ export default function Home() {
           <div>
               <ul className="flex items-center space-y-3 flex space-x-6 space-y-0">
                 <li className="text-black flex items-center  ">
-                  <Link href="/">
+                  <p>
                   <NotificationsNoneRoundedIcon style={{color:"#1D267D"}}/>
-                  </Link>
+                  </p>
                 </li>
               
                 

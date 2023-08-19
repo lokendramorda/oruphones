@@ -343,14 +343,14 @@ export default function ProfilePage() {
         </div>
       )}
 
-      <div className="lg:w-[80%] md:w-full sm:w-full md:h-[1900px] sm:h-[1900px] lg:h-[1000px] ml-auto bg-gray-100 items-top items-center  flex flex-col">
+      <div className="lg:w-[80%] md:w-full sm:w-full md:h-[1900px] sm:h-[2200px] lg:h-[1400px] ml-auto bg-gray-100 items-top items-center  flex flex-col">
         <div
-          className="flex w-[99%]  mt-3 sm:h-[9%] md:h-[13%] lg:h-[33%] rounded-lg  items-top"
+          className="flex w-[99%]  mt-3 sm:h-[8%] md:h-[13%] lg:h-[25%] rounded-lg  items-top"
           style={{ backgroundColor: "#1D267D" }}
         >
           <p className="flex mr-auto p-3">MY PROFILE</p>
         </div>
-        <div className="lg:bg-white  lg:shadow-lg   text-black lg:shadow-lg  lg:w-[80%] lg:w-[80%] sm:w-[90%] rounded-lg lg:h-full sm:h-full md:h-full flex justify-start  items-top z-10 relative lg:top-[-120px] md:top-[-110px] sm:top-[-85px]">
+        <div className="lg:bg-white  lg:shadow-lg   text-black lg:shadow-lg  lg:w-[80%] lg:w-[80%] sm:w-[90%] rounded-lg lg:h-full sm:h-full md:h-full flex justify-start  items-top z-10 relative lg:top-[-120px] md:top-[-110px] sm:top-[-95px]">
           <div className="flex lg:flex-row sm:flex-col lg:justify-between  w-full max-w-full p-6">
             <div className="sm:bg-white flex flex-col lg:w-[45%] sm:w-[100%] lg:mr-5 sm:p-4 lg:p-0  sm:rounded-lg sm:mb-9">
               <div className="flex flex-row  mb-4 justify-center items-center">

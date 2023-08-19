@@ -6,10 +6,10 @@ import oru from '../oru.png'
 export default function Home() {
   return (
     <main className=" bg-white">
-     <div className="flex min-h-screen">
+     <div className="flex min-h-screen sm:flex-col lg:flex-row justify-center items-center">
            
-           <div className="w-1/2 flex text-black justify-center items-center p-10">
-             <div className="mb-8 relative top-[-50px]">
+           <div className="lg:w-1/2 md:w-full sm:w-full flex text-black justify-center items-center p-10">
+             <div className="mb-8 relative ">
                {" "}
                
                <Image className='' src={oru} alt="oru" width={70} height={40}/>
@@ -26,7 +26,7 @@ export default function Home() {
            </div>
 
           
-           <div className="w-1/2 bg-gray-100  flex text-black justify-center items-center min-h-screen">
+           <div className="lg:w-1/2 md:w-full sm:w-full bg-gray-100  flex text-black justify-center items-center min-h-screen">
            <div className="text-center relative top-[-60px]">
                <h2 className="text-2xl font-bold mb-6">Get Started!</h2>
                <Link
